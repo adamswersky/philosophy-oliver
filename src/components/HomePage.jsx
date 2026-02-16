@@ -1,5 +1,6 @@
 import { experiments } from "../data/experiments";
 import ExperimentCard from "./ExperimentCard";
+import bannerImg from "/banner.png?url";
 
 export default function HomePage({ progress, onStartExperiment }) {
   const completedCount = Object.values(progress.experiments).filter(
@@ -10,7 +11,7 @@ export default function HomePage({ progress, onStartExperiment }) {
     <div className="fade-in">
       <div className="mb-10">
         <img
-          src="/banner.png"
+          src={bannerImg}
           alt="Oliver versus Philosophy"
           className="w-full rounded-2xl shadow-md mb-6"
         />
